@@ -1,0 +1,9 @@
+.pokemon__numero {
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

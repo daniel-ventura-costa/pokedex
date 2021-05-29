@@ -1,0 +1,8 @@
+.pokemon__imagem {
+    display: flex;
+    float: right;
+    width: 96px;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+body {
+    background: #CFD8DC;
+}
+
+.cabecalho {
+    background: #c62828;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+

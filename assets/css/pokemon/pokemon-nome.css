@@ -1,0 +1,9 @@
+.pokemon__nome {
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}

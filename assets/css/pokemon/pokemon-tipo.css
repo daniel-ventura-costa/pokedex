@@ -1,0 +1,22 @@
+.pokemon__tipo {
+    background: #f5f5f5;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 0;
+    width: 70px;
+}
+
+.pokemon__tipo--verde {
+    border: 1px solid #1B5E20;
+    color: #1B5E20;
+}
+
+.pokemon__tipo--roxo {
+    border: 1px solid #4A148C;
+    color: #4A148C;
+}

@@ -1,0 +1,13 @@
+.rodape {
+    background: #546E7A;
+    bottom: 0px;
+    color: #B0BEC5;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1em 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
