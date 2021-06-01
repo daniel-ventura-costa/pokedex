@@ -6,3 +6,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.pokemon__imagem:hover {
+    cursor: pointer;
+}
+
+.pokemon__imagem--filter {
+    filter: brightness(0) contrast(0.5) blur(2px);
+}

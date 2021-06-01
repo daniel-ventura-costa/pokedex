@@ -1,0 +1,51 @@
+.pokemon__medidor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.barra-progresso {
+    background-color: #CFD8DC;
+    border-radius: 25px;
+    height: 15px;
+    padding: 4px;
+    width: 200px;
+}
+
+.barra-progresso-preenchimento {
+    background-color: #66BB6A;
+    border-radius: 25px;
+    display: block;
+    height: 100%;
+}
+
+.pokemon__medidor .status {
+    position: relative;
+
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size:0.8rem;
+    font-weight: bold;
+    width: 130px;
+    text-align: center;
+
+    margin: 0 10px 0 0;
+}
+
+.pokemon__medidor .barra-progresso {
+    position: relative;
+    display: flex;
+}
+
+
+.barra-progresso-preenchimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+}

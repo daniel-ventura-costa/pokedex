@@ -1,14 +1,19 @@
 .pokemon__card {
     background: #F5F5F5;
     box-sizing: border-box;
-    box-shadow: 2px 2px 1px #455A64;
+    box-shadow: 1px 1px #888;
     border: 4px solid #F5F5F5;
-    border-radius: 3px;
     display: inline-block;
     padding: 10px;
     position: relative;
-    margin: 5px;
-    width: 222px;
+    margin: 0 10px 10px 0;
+    width: 225px;
+    transition: all 0.1s ease;
+}
+
+.pokemon__card:hover {
+    transform: translateY(-5px);
+    z-index: 1;
 }
 
 .pokemon__card--pokeball {
@@ -19,19 +24,42 @@
     background-blend-mode: overlay;
 }
 
-.pokemon__card--green {
-    background-color: #9CCC65;
-    
+.pokemon__card--grass, .pokemon__card--bug {
+    background-color: #C8E6C9;
 }
 
-.pokemon__card--red {
-    background-color: #FFAB91;
+.pokemon__card--fire {
+    background-color: #ffcdd2;
 }
 
-.pokemon__card--blue {
-    background-color: #90CAF9;
+.pokemon__card--poison, .pokemon__card--ghost {
+    background-color: #E1BEE7;
 }
 
-.pokemon__card--yellow {
-    background-color: #FFB74D;
+.pokemon__card--water {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--dragon {
+    background-color: #D1C4E9;
+}
+
+.pokemon__card--ice {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--electric {
+    background-color: #FFECB3;
+}
+
+.pokemon__card--normal {
+    background-color: #E0E0E0;
+}
+
+.pokemon__card--psychic, .pokemon__card--fairy {
+    background-color: #F8BBD0;
+}
+
+.pokemon__card--ground, .pokemon__card--fighting, .pokemon__card--rock {
+    background-color: #D7CCC8;
 }

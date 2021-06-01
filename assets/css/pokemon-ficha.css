@@ -1,0 +1,61 @@
+.pokemon__imagens {
+    width: 30%;
+}
+
+.pokemon__status {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+    width: 30%;
+}
+
+.pokemon__habilidades {
+    width: 30%;
+}
+
+.pokemon__imagem {
+    height: 165px;
+}
+
+.content-colunas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon__cabecalho {
+    align-items: center;
+    background-image: url(./../img/background_pokeball.png);
+    background-color: #C8E6C9;
+    background-size: 232px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    position: relative;
+}
+
+.pokemon__nome {
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.pokemon__numero {
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.container__body {
+    padding: 40px 30px 10px 30px;
+}
+
+.pokemon__tipos {
+    display: flex;
+    flex-direction: column;
+}

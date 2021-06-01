@@ -1,5 +1,5 @@
 .rodape {
-    background: #546E7A;
+    background: #607D8B;
     bottom: 0px;
     color: #B0BEC5;
     display: block;
@@ -7,7 +7,7 @@
     font-size: 12px;
     font-weight: bold;
     padding: 1em 0;
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
 }

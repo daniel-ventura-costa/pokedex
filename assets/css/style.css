@@ -4,6 +4,8 @@ body {
 
 .cabecalho {
     background: #c62828;
+    display: flex;
+    flex-direction: column;
     padding: 50px 0;
     text-align: center;
 }
@@ -11,6 +13,34 @@ body {
 .container {
     position: relative;
     width: 940px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
+.card {
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: 1px 1px #888;
+    margin-top: -20px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra-pesquisa .label {
+    display: block;
+}
+
+.barra-pesquisa .input {
+    background-color: #811616;
+    border: none;
+    border-radius: 25px;
+    color: #F5F5F5;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 10px 25px;
+}
