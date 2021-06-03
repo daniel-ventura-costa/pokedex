@@ -10,6 +10,22 @@ function fetchKantoPokemon() {
         })
 }
 
+function renderPokemonCards(pokemon) {
+    let content = `<div class="pokemon__nome">${pokemon.name}</div>`;
+
+    // Criando o elemento pai
+    let div = document.createElement('div');
+    div.classList.add('pokemon__card', 'pokemon__card--pokeball');
+    div.setAttribute("id", pokemon.name);
+    div.innerHTML = content;
+
+    let sectionPokemon = document.querySelector('.pokemons');
+    sectionPokemon.appendChild(div);
+
+    // faz o fetch dos pokemons
+    fetchPokemonData(pokemon, pokemon.name);
+}
+
 function fetchPokemonData(pokemon, id) {
     let url = pokemon.url;
     fetch(url)
@@ -25,7 +41,7 @@ function fetchPokemonData(pokemon, id) {
 
             // Carrega a imagem do pokemon
             let pokemonImagem = document.createElement('a');
-            pokemonImagem.setAttribute('href', 'pokemon.html');
+            pokemonImagem.setAttribute('href', 'pokemon.html?pokemon=' + pokeData.name);
             pokemonImagem.setAttribute('class', 'pokemon__imagem');
             pokemonImagem.innerHTML = `<img src="${pokeData['sprites']['versions']['generation-v']['black-white']['animated']['front_default']}" alt="imagem ${id}">`;
 
@@ -46,22 +62,6 @@ function fetchPokemonData(pokemon, id) {
         })
 }
 
-function renderPokemonCards(pokemon) {
-    let content = `<div class="pokemon__nome">${pokemon.name}</div>`;
-
-    // Criando o elemento pai
-    let div = document.createElement('div');
-    div.classList.add('pokemon__card', 'pokemon__card--pokeball');
-    div.setAttribute("id", pokemon.name);
-    div.innerHTML = content;
-
-    let sectionPokemon = document.querySelector('.pokemons');
-    sectionPokemon.appendChild(div);
-
-    // faz o fetch dos pokemons
-    fetchPokemonData(pokemon, pokemon.name);
-}
-
 function createTypes(types, ul) {
     types.forEach(function (type) {
 
@@ -74,8 +74,4 @@ function createTypes(types, ul) {
 
         ul.append(typeLi)
     })
-}
-
-function leftFillNum(num, targetLength) {
-    return num.toString().padStart(targetLength, 0);
 }

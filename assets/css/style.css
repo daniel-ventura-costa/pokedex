@@ -3,7 +3,9 @@ body {
 }
 
 .cabecalho {
-    background: #c62828;
+    /* background: #c62828; */
+    background: rgb(211,47,47);
+    background: radial-gradient(circle, rgba(211,47,47,1) 0%, rgba(183,28,28,1) 100%);
     display: flex;
     flex-direction: column;
     padding: 50px 0;
@@ -18,6 +20,7 @@ body {
 
 .card {
     background-color: #F5F5F5;
+    border: 4px solid #F5F5F5;
     box-sizing: border-box;
     box-shadow: 1px 1px #888;
     margin-top: -20px;
@@ -43,4 +46,8 @@ body {
     font-size: 1rem;
     font-weight: lighter;
     padding: 10px 25px;
+}
+
+.pokebola-pixel {
+    width: 40px;
 }

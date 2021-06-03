@@ -1,0 +1,151 @@
+.animacao__choque {
+    animation-duration: 100ms;
+    animation-name: choque;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+.animacao__piscar {
+    animation-duration: 100ms;
+    animation-name: piscar;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+.animacao_jogar-pokebola {
+    animation: jogar_pokebola 3s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.pokemon__imagem {
+    transform: scale(1.5);
+    position: absolute;
+    bottom: 100px;
+    left: 160px;
+}
+
+.pokemonAdversario__imagem {
+    transform: scale(1.5);
+    position: absolute;
+    top: 98px;
+    right: 195px;
+}
+
+.pokemon_sair_pokebola {
+    animation-name: rotate;
+    animation-duration: 0.4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.animacao_flip {
+    animation: flip 2s linear infinite;
+}
+
+.animacao_enter_from_right {
+    animation: enter-from-right 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animacao_enter_from_left {
+    animation: enter-from-left 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animacao_exit_to_right {
+    animation: exit-to-right 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jogar_pokebola {
+    0% {
+        transform: rotate(0deg);
+        bottom: 48px;
+        left: -50px;
+        width: 50px;
+    }
+    20% {
+        transform: rotate(900deg);
+        bottom: 87px;
+        left: 181px;
+        width: 20px;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(900deg);
+        bottom: 87px;
+    left: 181px;
+        opacity: 0;
+        width: 20px;
+    }
+}
+
+@keyframes piscar {
+    from {
+        opacity: 1;
+     }
+     to {
+        opacity: 0;
+     }
+}
+
+@keyframes choque {
+    from {
+        filter: invert(0);
+     }
+     to {
+        filter: invert(1);
+     }
+}
+
+@keyframes rotate {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    100% {
+        width: initial;
+        opacity: 1;
+    }
+}
+
+@keyframes flip {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes enter-from-right {
+    from {
+        transform: translateX(270px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes exit-to-right {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(270px);
+    }
+}
+
+@keyframes enter-from-left {
+    from {
+        transform: translateX(-275px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}

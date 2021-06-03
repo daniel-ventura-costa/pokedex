@@ -11,9 +11,44 @@
     width: 70px;
 }
 
+.pokemon__badge {
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100px;
+}
+
+.pokemon__badge .pokemonTipo__imagem {
+    background-color: #607D8B;
+    padding: 3px;
+    width: 23px;
+}
+
+.pokemonTipo__imagem img {
+    height: 13px;
+}
+
+.pokemonTipo__texto {
+    flex-grow: 1;
+    text-align: center;
+}
+
 .pokemon__tipo--grass, .pokemon__tipo--bug {
     border: 1px solid #1B5E20;
     color: #1B5E20;
+}
+
+.pokemon__tipo--grass .pokemonTipo__imagem,
+.pokemon__tipo--bug .pokemonTipo__imagem
+{
+    background-color: #1B5E20;
 }
 
 .pokemon__tipo--poison, .pokemon__tipo--ghost {
@@ -21,9 +56,19 @@
     color: #4A148C;
 }
 
+.pokemon__tipo--poison .pokemonTipo__imagem,
+.pokemon__tipo--ghost .pokemonTipo__imagem
+{
+    background-color: #4A148C;
+}
+
 .pokemon__tipo--fire {
     border: 1px solid #b71c1c;
     color: #b71c1c;
+}
+
+.pokemon__tipo--fire .pokemonTipo__imagem {
+    background-color: #b71c1c;
 }
 
 .pokemon__tipo--water, .pokemon__tipo--ice, .pokemon__tipo--flying {
@@ -31,9 +76,20 @@
     color: #0D47A1;
 }
 
+.pokemon__tipo--water .pokemonTipo__imagem,
+.pokemon__tipo--ice .pokemonTipo__imagem,
+.pokemon__tipo--flying .pokemonTipo__imagem
+{
+    background-color: #0D47A1;
+}
+
 .pokemon__tipo--electric {
-    border: 1px solid #D84315;
+    border: 1px solid #FF6D00;
     color: #FF6D00;
+}
+
+.pokemon__tipo--electric .pokemonTipo__imagem {
+    background-color: #FF6D00;
 }
 
 .pokemon__tipo--normal, .pokemon__tipo--steel {
@@ -41,9 +97,19 @@
     color: #424242;
 }
 
+.pokemon__tipo--normal .pokemonTipo__imagem,
+.pokemon__tipo--steel .pokemonTipo__imagem
+{
+    background-color: #424242;
+}
+
 .pokemon__tipo--dragon {
     border: 1px solid #512DA8;
     color: #512DA8;
+}
+
+.pokemon__tipo--dragon .pokemonTipo__imagem {
+    background-color: #512DA8;
 }
 
 .pokemon__tipo--ground, .pokemon__tipo--fighting, .pokemon__tipo--rock {
@@ -51,7 +117,20 @@
     color: #4E342E;
 }
 
+.pokemon__tipo--ground .pokemonTipo__imagem,
+.pokemon__tipo--fighting .pokemonTipo__imagem,
+.pokemon__tipo--rock .pokemonTipo__imagem
+{
+    background-color: #4E342E;
+}
+
 .pokemon__tipo--fairy, .pokemon__tipo--psychic {
     border: 1px solid #C2185B;
     color: #C2185B;
+}
+
+.pokemon__tipo--fairy .pokemonTipo__imagem,
+.pokemon__tipo--psychic .pokemonTipo__imagem
+{
+    background-color: #C2185B;
 }

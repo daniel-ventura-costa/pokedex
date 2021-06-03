@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 6px;
+    width: 100%;
 }
 
 .barra-progresso {
@@ -10,7 +11,7 @@
     border-radius: 25px;
     height: 15px;
     padding: 4px;
-    width: 200px;
+    width: 100%;
 }
 
 .barra-progresso-preenchimento {
@@ -22,14 +23,11 @@
 
 .pokemon__medidor .status {
     position: relative;
-
     color: #263238;
     font-family: 'Roboto', sans-serif;
     font-size:0.8rem;
-    font-weight: bold;
-    width: 130px;
+    width: 190px;
     text-align: center;
-
     margin: 0 10px 0 0;
 }
 

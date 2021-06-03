@@ -7,35 +7,86 @@
         <link rel="shortcut icon" type="image/svg" href="./assets/img/pokeball.svg"/>
         <title>Pokedex</title>
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="./assets/css/reset.css">
 
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
 
-        <link rel="stylesheet" href="./assets/css/pokemom-batalha.css">
+        <link rel="stylesheet" href="./assets/css/pokemon-batalha.css">
+        <link rel="stylesheet" href="./assets/css/animacoes.css">
+
+        <link rel="stylesheet" href="./assets/css/botao/botao.css">
 
     </head>
     <body>
 
         <header class="cabecalho">
-            <h1>
+            <a href="index.html">
                 <img src="./assets/img/pokedex.png" alt="logotipo pokedex">
-            </h1>
+            </a>
         </header>
 
         <main class="container card">
 
             <section class="pokemon_main">
 
-                <img class="pokebola__pixel animate" src="./assets/img/pokebola_pixel.png" alt="">
+                <!-- pokebola loading -->
+                <!-- <img class="pokebola-pixel animacao_flip" src="./assets/img/pokebola_pixel.png" alt=""> -->
+
+                <!-- animação jogar pokebola -->
+                <!-- <img class="pokebola__pixel animacao_jogar-pokebola" src="./assets/img/pokebola_pixel.png" alt=""> -->
+
+                <div class="batalha__card">
+                    <div class="batalha__pokemonStatus">
+                        <div class="batalha__pokemonName">Pikachu</div>
+                        <div class="batalha__barraSaude">
+                            <div class="pokemon__medidor">
+                                <div class="barra-progresso">
+                                    <span id="hp-adversario" class="barra-progresso-preenchimento" style="width: 100%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="batalha__pokemonImagem batalha__pokemonImagem-adversario animacao_enter_from_right">
+                        <img class="grama" src="./assets/img/grama.png" alt="">
+                        <img class="pokemon" id="pokemonAdversario" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/67.gif" alt="">
+                    </div>
+                </div>
+
+                <div class="batalha__card">
+                    <div class="batalha__pokemonImagem batalha__pokemonImagem-proprio animacao_enter_from_left">
+                        <img class="grama" src="./assets/img/grama.png" alt="">
+                        <img class="pokemon" id="meuPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/74.gif" alt="">
+                    </div>
+                    <div class="batalha__pokemonStatus">
+                        <div class="batalha__pokemonName">Starmie</div>
+
+                        <div class="batalha__barraSaude">
+                            <div class="pokemon__medidor">
+                                <div class="barra-progresso">
+                                    <span id="hp-proprio" class="barra-progresso-preenchimento" style="width: 100%"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </section>
 
         </main>
 
+        <button id="buttonDarDano" class="botao">Bater</button>
+        <button id="buttonTomarDano" class="botao">Tomar dano</button>
+
         <!-- <footer class="rodape">
             Feito com carinho por Daniel Ventura Costa
         </footer> -->
+
+        <script src="./assets/js/batalha.js"></script>
 
     </body>
 </html>

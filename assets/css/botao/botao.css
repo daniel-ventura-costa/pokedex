@@ -1,0 +1,11 @@
+.botao {
+    background-color: #1976D2;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    color: #E3F2FD;
+}
+
+.botao:active {
+    background-color: #0D47A1;
+}

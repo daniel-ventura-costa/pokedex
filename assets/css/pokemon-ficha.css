@@ -5,9 +5,21 @@
 .pokemon__status {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 4px;
     position: relative;
-    width: 30%;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    width: 33%;
+    align-items: center;
+}
+
+.pokemon__status .titulo {
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .pokemon__habilidades {
@@ -26,7 +38,6 @@
 .pokemon__cabecalho {
     align-items: center;
     background-image: url(./../img/background_pokeball.png);
-    background-color: #C8E6C9;
     background-size: 232px;
     background-position: right;
     background-repeat: no-repeat;
@@ -42,6 +53,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     font-weight: bolder;
+    text-transform: capitalize;
 }
 
 .pokemon__numero {
@@ -53,9 +65,50 @@
 
 .container__body {
     padding: 40px 30px 10px 30px;
+    display: flex;
 }
 
 .pokemon__tipos {
     display: flex;
     flex-direction: column;
+}
+
+.pokemon__card--grass, .pokemon__card--bug {
+    background-color: #C8E6C9;
+}
+
+.pokemon__card--fire {
+    background-color: #ffcdd2;
+}
+
+.pokemon__card--poison, .pokemon__card--ghost {
+    background-color: #E1BEE7;
+}
+
+.pokemon__card--water {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--dragon {
+    background-color: #D1C4E9;
+}
+
+.pokemon__card--ice {
+    background-color: #BBDEFB;
+}
+
+.pokemon__card--electric {
+    background-color: #FFECB3;
+}
+
+.pokemon__card--normal {
+    background-color: #E0E0E0;
+}
+
+.pokemon__card--psychic, .pokemon__card--fairy {
+    background-color: #F8BBD0;
+}
+
+.pokemon__card--ground, .pokemon__card--fighting, .pokemon__card--rock {
+    background-color: #D7CCC8;
 }

@@ -16,21 +16,20 @@
         <link rel="stylesheet" href="./assets/css/pokemon-medidor/pokemon-medidor.css">
 
         <link rel="stylesheet" href="./assets/css/pokemon/pokemon-tipo.css">
-        <link rel="stylesheet" href="./assets/css/pokemon-bagde/pokemon-badge.css">
 
     </head>
     <body>
 
         <header class="cabecalho">
-            <h1>
+            <a href="index.html">
                 <img src="./assets/img/pokedex.png" alt="logotipo pokedex">
-            </h1>
+            </a>
         </header>
 
         <main class="container card">
 
             <section class="pokemon__cabecalho">
-                <img class="pokemon__imagem" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="">
+                <img id="pokemon__imagem" class="pokemon__imagem" alt="">
                 <div class="pokemon__informacoes">
                     <div class="pokemon__numero">
                         #001
@@ -40,71 +39,100 @@
                     </div>
                 </div>
                 <div class="pokemon__tipos">
-                    <div class="pokemon__tipo pokemon__tipo--verde">grass</div>
-                    <div class="pokemon__tipo pokemon__tipo--roxo">poison</div>
                 </div>
                 <div class="pokemon__sprites">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/1.gif" alt="">
+                    <img id="sprite_front" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="">
+                    <img id="sprite_back" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/1.gif" alt="">
                 </div>
             </section>
 
             <div class="container__body">
 
                 <section class="pokemon__status">
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">HP</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
+                    <div class="titulo">
+                        Status
                     </div>
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">Attack</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
-                    </div>
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">Defense</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
-                    </div>
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">Special attack</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
-                    </div>
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">Special defense</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
-                    </div>
-    
-                    <div class="pokemon__medidor">
-                        <div class="status">Speed</div>
-                        <div class="barra-progresso">
-                            <span class="barra-progresso-preenchimento" style="width: 25%"> 25</span>
-                        </div>
-                    </div>
-    
                 </section>
 
-                <section>
-                    <div class="pokemon__badge pokemon__badge--verde">
-                        <div class="pokemonTipo__imagem">
-                            <img src="./assets/img/icones_tipos/bug.svg" alt="">
+                <section class="pokemon__status">
+                    <div class="titulo">
+                        Vantagens
+                    </div>
+                    <div class="vantagens__lista">
+                        <div class="pokemon__badge pokemon__tipo--water">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/water.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                water
+                            </span>
                         </div>
-                        <span class="pokemonTipo__texto">
-                            inseto
-                        </span>
+                        <div class="pokemon__badge pokemon__tipo--ground">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/ground.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                ground
+                            </span>
+                        </div>
+                        <div class="pokemon__badge pokemon__tipo--rock">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/rock.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                rock
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pokemon__status">
+                    <div class="titulo">
+                        Desvantagens
+                    </div>
+                    <div class="pokemon__tipos">
+
+                        <div class="pokemon__badge pokemon__tipo--fire">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/fire.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                fire
+                            </span>
+                        </div>
+
+                        <div class="pokemon__badge pokemon__tipo--grass">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/grass.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                grass
+                            </span>
+                        </div>
+                        <div class="pokemon__badge pokemon__tipo--poison">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/poison.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                poison
+                            </span>
+                        </div>
+                        <div class="pokemon__badge pokemon__tipo--flying">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/flying.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                flying
+                            </span>
+                        </div>
+                        <div class="pokemon__badge pokemon__tipo--dragon">
+                            <div class="pokemonTipo__imagem">
+                                <img src="./assets/img/icones_tipos/dragon.svg" alt="">
+                            </div>
+                            <span class="pokemonTipo__texto">
+                                dragon
+                            </span>
+                        </div>
                     </div>
                 </section>
 
@@ -112,9 +140,11 @@
 
         </main>
 
-        <footer class="rodape">
+        <!-- <footer class="rodape">
             Feito com carinho por Daniel Ventura Costa
-        </footer>
+        </footer> -->
 
+        <script src="./assets/js/helpers.js"></script>
+        <script src="./assets/js/pokemon.js"></script>
     </body>
 </html>
