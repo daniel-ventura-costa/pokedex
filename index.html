@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-        <link rel="shortcut icon" type="image/svg" href="./assets/img/pokeball.svg"/>
-        <title>Pokedex</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="./assets/img/pokeball.svg" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/pokemon/pokemon-card.css">
+</head>
 
-        <link rel="stylesheet" href="./assets/css/reset.css">
+<body>
 
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img src="./assets/img/pokedex.png" alt="logotipo pokedex">
+        </a>
+    </header>
 
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/footer.css">
-        <link rel="stylesheet" href="./assets/css/pokemons.css">
+    <main class="container menu__wrapper">
+        <a href="pokedex.html" class="card menu__wrapper-item menu__wrapper-item--blue">
+            <img src="./assets/img/logo_pokedex.png" alt="">
+            <h2>Pokedex</h2>
+        </a>
+        <div class="card menu__wrapper-item menu__wrapper-item--red">
+            <img src="./assets/img/logo_insignias.png" alt="">
+            <h2>Insignias</h2>
+        </div>
+        <a href="batalha.html" class="card menu__wrapper-item menu__wrapper-item--yellow">
+            <img src="./assets/img/logo_battle.png" alt="">
+            <h2>Batalha</h2>
+        </a>
+        <div class="card menu__wrapper-item menu__wrapper-item--green">
+            <img src="./assets/img/logo_creditos.png" alt="">
+            <h2>Creditos</h2>
+        </div>
+    </main>
 
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-card.css">
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-tipos.css">
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-tipo.css">
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-nome.css">
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-numero.css">
-        <link rel="stylesheet" href="./assets/css/pokemon/pokemon-imagem.css">
-    </head>
-    <body>
+    <footer class="rodape">
+        Feito com carinho por Daniel Ventura Costa
+    </footer>
 
-        <header class="cabecalho">
-            <!-- <div class="container"> -->
-                <h1>
-                    <img src="./assets/img/pokedex.png" alt="logotipo pokedex">
-                </h1>
-                <!-- <div class="barra-pesquisa">
-                    <input class="input" id="pesquisa" type="text" name="pesquisa" placeholder="Digite o nome ou numero do pokemon">
-                </div>
-            </div> -->
-        </header>
+</body>
 
-        <main class="container">
-
-            <section class="pokemons">
-            </section>
-
-        </main>
-
-        <footer class="rodape">
-            Feito com carinho por Daniel Ventura Costa
-        </footer>
-
-        <script src="./assets/js/helpers.js"></script>
-        <script src="./assets/js/main.js"></script>
-    </body>
 </html>

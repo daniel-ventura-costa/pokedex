@@ -1,9 +1,12 @@
 body {
     background: #CFD8DC;
+    height:100vh;
+    margin:0;
+    display:flex; 
+    flex-direction:column; 
 }
 
 .cabecalho {
-    /* background: #c62828; */
     background: rgb(211,47,47);
     background: radial-gradient(circle, rgba(211,47,47,1) 0%, rgba(183,28,28,1) 100%);
     display: flex;
@@ -13,9 +16,26 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px auto;
     position: relative;
     width: 940px;
-    margin: 0 auto 20px auto;
+}
+
+.rodape {
+    background: #607D8B;
+    bottom: 0px;
+    color: #B0BEC5;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top:auto;
+    padding: 1em 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .card {
@@ -23,31 +43,87 @@ body {
     border: 4px solid #F5F5F5;
     box-sizing: border-box;
     box-shadow: 1px 1px #888;
-    margin-top: -20px;
-}
-
-.barra-pesquisa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.barra-pesquisa .label {
-    display: block;
-}
-
-.barra-pesquisa .input {
-    background-color: #811616;
-    border: none;
-    border-radius: 25px;
-    color: #F5F5F5;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding: 10px 25px;
 }
 
 .pokebola-pixel {
     width: 40px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 80%;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* Inicio */
+.menu__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu__wrapper-item {
+    align-items: center;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(160deg, #CFD8DC 0%, #F5F5F5 100%);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-decoration: none;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.menu__wrapper-item__pokebola-fundo {
+    
+}
+
+.menu__wrapper-item img {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.menu__wrapper-item h2 {
+    color: #263238;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.menu__wrapper-item--blue:hover {
+    background-image: linear-gradient(160deg, #BBDEFB 0%, #F5F5F5 100%);
+}
+
+.menu__wrapper-item--yellow:hover {
+    background-image: linear-gradient(160deg, #FFF9C4 0%, #F5F5F5 100%);
+}
+
+.menu__wrapper-item--red:hover {
+    background-image: linear-gradient(160deg, #ffcdd2 0%, #F5F5F5 100%);
+}
+
+.menu__wrapper-item--green:hover {
+    background-image: linear-gradient(160deg, #C8E6C9 0%, #F5F5F5 100%);
+}
+
+.menu__wrapper-item:hover {
+    transform: translateY(-5px);
+    z-index: 1;
 }

@@ -1,5 +1,7 @@
 .pokemon_main {
+    align-items: center;
     background-color: cadetblue;
+    background-image: url('./../img/background_battle1.png');
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -7,8 +9,7 @@
     overflow: hidden;
     padding: 20px;
     position: relative;
-    background-image: url('./../img/background_battle1.png');
-    align-items: center;
+    width: 100%;
 }
 
 .container {

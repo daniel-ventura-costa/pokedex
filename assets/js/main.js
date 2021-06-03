@@ -19,7 +19,7 @@ function renderPokemonCards(pokemon) {
     div.setAttribute("id", pokemon.name);
     div.innerHTML = content;
 
-    let sectionPokemon = document.querySelector('.pokemons');
+    let sectionPokemon = document.querySelector('.container');
     sectionPokemon.appendChild(div);
 
     // faz o fetch dos pokemons

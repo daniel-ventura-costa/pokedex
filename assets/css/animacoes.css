@@ -47,13 +47,18 @@
     animation-fill-mode: forwards;
 }
 
+.animacao_exit_to_right {
+    animation: exit-to-right 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 .animacao_enter_from_left {
     animation: enter-from-left 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
-.animacao_exit_to_right {
-    animation: exit-to-right 1s ease-in-out;
+.animacao_exit_to_left {
+    animation: exit-to-left 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -147,5 +152,14 @@
     }
     to {
         transform: translateX(0px);
+    }
+}
+
+@keyframes exit-to-left {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-275px);
     }
 }

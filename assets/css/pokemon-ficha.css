@@ -46,6 +46,7 @@
     justify-content: space-around;
     height: 100px;
     position: relative;
+    width: 100%;
 }
 
 .pokemon__nome {
@@ -64,8 +65,9 @@
 }
 
 .container__body {
-    padding: 40px 30px 10px 30px;
     display: flex;
+    padding: 40px 30px 10px 30px;
+    width: 100%;
 }
 
 .pokemon__tipos {
